@@ -9,4 +9,4 @@
 
 **Result**
 
-- [DEMO LINK](https://vladyslav223.github.io/uber_eats/)
+- [DEMO LINK](https://vladyslav223.github.io/Uber_eats/)
