@@ -30,9 +30,9 @@
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1); }
   .main-head__logo {
-    width: 120px;
-    height: 13px;
-    background-image: url(./../images/logo.jpg);
+    width: 130px;
+    height: 48px;
+    padding-top: 20px;
     display: inline-block;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
@@ -197,6 +197,7 @@
     top: 15px; }
 
 .search {
+  overflow: hidden;
   width: 100%;
   max-width: 1175px;
   position: relative;
@@ -558,13 +559,13 @@ hr,
 p {
   margin: 0;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: Roboto, sans-serif; }
 
-.page {
+.container {
   padding: 10px; }
 
 .main-heading {
-  font-family: Roboto, sans-serif;
   font-size: 22px;
   line-height: 34px;
   color: #1d1d1d;
@@ -578,7 +579,6 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: Roboto, sans-serif;
   max-width: 1224px;
   margin: auto;
   -ms-flex-pack: distribute;
