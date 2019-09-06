@@ -1,20 +1,33 @@
-.main-head {
-  height: 145px;
+
+.wrap {
+  max-width: 1170px;
+  margin: auto;
+  height: 72px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  max-width: 1170px;
-  margin-bottom: 106px;
+}
 
+.main-head {
+  height: 72px;
+  width: 100%;
+  margin-bottom: 180px;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+
+  &__cart-img {
+    transition: transform 0.2s;
+    &:hover {
+      transform: scaleX(-1);
+    }
+  }
   &__logo {
     width: 120px;
     height: 13px;
     background-image: url(./../images/logo.jpg);
     display: inline-block;
-    transition: transform 0.5s;
+    transition: transform 0.2s;
     &:hover {
       transform: scaleX(-1);
     }
@@ -25,6 +38,7 @@
   }
 
   &__asap {
+    outline: none;
     width: 65px;
     height: 40px;
     border: 1px solid #e0e0e0;
@@ -37,7 +51,8 @@
     display: flex;
     align-items: center;
     color: #1d1d1d;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
     font-weight: 500;
     transition: box-shadow 2s;
 
@@ -49,6 +64,7 @@
   }
 
   &__location {
+    outline: none;
     width: 246px;
     padding-left: 42px;
     height: 40px;
@@ -87,7 +103,6 @@
   &__button-sign {
     width: 80px;
     height: 40px;
-    border: 1px solid e0e0e0;
     box-sizing: border-box;
     border-radius: 2px;
     font-family: Roboto, sans-serif;
@@ -95,14 +110,16 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 24px;
-    padding-top: 6px;
+    padding-top: 1px;
     text-align: center;
     color: #1d1d1d;
     transform: scale(1);
     transition: background-color 0.5s, transform 0.5s, border 0.5s;
+    border: none;
+    outline: none;
 
     &:hover {
-      background-color: gray;
+      background-color: #262626;
       border: 1px solid #222;
       transform: scale(1.05);
       color: white;
@@ -120,10 +137,12 @@
     font-size: 13px;
     line-height: 24px;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 1px;
     box-sizing: border-box;
     color: white;
     transition: background-color 0.5s, transform 0.5s, border 0.5s;
+    border: none;
+    outline: none;
 
     &:active {
       transform: translateY(1px);
@@ -131,8 +150,7 @@
     }
 
     &:hover {
-      background-color: rgb(175, 175, 175);
-      border: 1px solid #222;
+      background-color: #ddd;
       color: rgb(46, 46, 46);
     }
   }
@@ -181,7 +199,10 @@
   }
 
   &__text {
-    width: 223px;
+    width: 100%;
+    position: absolute;
+    left: 42px;
+    outline: none;
     height: 24px;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -192,6 +213,9 @@
     mix-blend-mode: normal;
     opacity: 0.5;
     border: 0;
+    &:focus {
+      background: rgb(236, 236, 236);
+    }
   }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 639px) {

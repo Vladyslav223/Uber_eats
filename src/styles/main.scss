@@ -59,6 +59,7 @@ p {
     width: 100%;
     transition: transform 0.3s;
     &:hover {
+      cursor: pointer;
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
       transform: scale(1.05);
@@ -67,7 +68,7 @@ p {
   &__product-heading {
     font-size: 16px;
     line-height: 24px;
-    color: rgb(202, 202, 202);
+    color: #1d1d1d;
   }
   &__product-title {
     font-size: 14px;
