@@ -14,7 +14,6 @@ p {
   font-style: normal;
   font-weight: normal;
   font-family: Roboto, sans-serif;
-
 }
 
 .container {
@@ -33,10 +32,9 @@ p {
 .content {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1224px;
+  max-width: 1170px;
   margin: auto;
   justify-content: space-around;
-  transition: background 2s;
 
   &:hover .main-heading {
     background: linear-gradient(45deg, #6d37ff 33%, #d700cc 66%, #ff3131);
@@ -65,18 +63,18 @@ p {
       transform: scale(1.05);
     }
   }
-  &__product-heading {
+  &__heading {
     font-size: 16px;
     line-height: 24px;
     color: #1d1d1d;
   }
-  &__product-title {
+  &__title {
     font-size: 14px;
     line-height: 21px;
     color: #626262;
     display: block;
   }
-  &__product-ready {
+  &__delivery-time {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
