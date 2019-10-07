@@ -55,12 +55,12 @@ p {
   }
   &__product-image {
     width: 100%;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
     &:hover {
       cursor: pointer;
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05);
+      -webkit-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+      transform: scale(1.04);
     }
   }
   &__heading {
