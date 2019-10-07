@@ -1,14 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+    <title>Uber</title>
+</head>
+<body>
+    <header class="main-head">
+      <div class="wrap">
+        <a href="#" class="main-head__logo">
+          <img src="images/logo.jpg" alt="logo">
+        </a>
+        <form class="main-head__form-wrap">
+          <label for="asap" class="main-head__label-asap">When</label>
+          <input
+            type="text"
+            placeholder="ASAP"
+            id="asap"
+            class="main-head__asap"
+          >
+          <label for="location" class="main-head__label-location">to</label>
+          <img src="images/loc.png" class="main-head__before-img" alt="location icon">
+          <input
+            type="text"
+            placeholder="ul. Tarasivska st, 16"
+            id="location"
+            class="main-head__location"
+          >
+        </form>
+        <div class="main-head__buttons-wrap">
+          <button class="main-head__button-sign">Sign in</button>
+          <button class="main-head__button-register">Register</button>
+          <button class="main-head__cart-img" alt="basket icon"></button>
+        </div>
+        <div class="search">
+          <img src="images/search.svg" alt="search icon" class="search__img">
+          <input
+            type="text"
+            class="search__text"
+            placeholder="Search for restaurant or cuisine"
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="content">
+        <div class="product">
+          <h1 class="main-heading">Kyiv Restaurants</h1>
+          <img src="images/product/photo1.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">Макдоналдс</h2>
+          <span class="product__title">₴₴ • Бургеры</span>
+          <span class="product__delivery-time">25 - 35 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo2.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">WOKWEI</h2>
+          <span class="product__title">₴ • Китайська • Азіатська</span>
+          <span class="product__delivery-time">40 - 50 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo3.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">YIZHA</h2>
+          <span class="product__title">₴₴ • Американська • Бургери • Вулична їжа</span>
+          <span class="product__delivery-time">35 - 45 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo4.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">Musafir (вул. Саксаганського)</h2>
+          <span class="product__title">₴₴ • Близькосхідна</span>
+          <span class="product__delivery-time">15 - 25 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo5.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">WOKWEI</h2>
+          <span class="product__title">₴ • Китайська • Азіатська</span>
+          <span class="product__delivery-time">15 - 25 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo6.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">Milk Bar</h2>
+          <span class="product__title">₴₴ • Десерти • Європейська</span>
+          <span class="product__delivery-time">15 - 25 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo7.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">Mimosa Brooklyn Pizza</h2>
+          <span class="product__title">₴₴ • Італійська • Піца • Американська</span>
+          <span class="product__delivery-time">15 - 25 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo8.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">To Be</h2>
+          <span class="product__title">₴₴ • Японська • Азіатська • Суші</span>
+          <span class="product__delivery-time">15 - 25 Min</span>
+        </div>
+        <div class="product">
+          <img src="images/product/photo9.jpg" alt="product" class="product__product-image">
+          <h2 class="product__heading">Druzi Cafe (вул. Прорізна)</h2>
+          <span class="product__title">₴₴ • Американська • Сучасна європейська • У...</span>
+          <span class="product__delivery-time">15 - 25 Min</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ground-floor">
+      <div class="wrap-footer">
+        <a href="#" class="ground-floor__logo"></a>
+        <hr>
+        <div class="top-row">
+          <div class="top-row__aside">
+            <form class="form-select" action="">
+              <img src="images/world.svg" class="form-select__world" alt="world">
+              <img src="images/eng.png" class="form-select__eng" alt="english">
+              <select name="select" id="" class="form-select__language">
+                <option value="English">English</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Russian">Russian</option>
+              </select>
+            </form>
+            <div class="socials-links">
+              <p class="socials-links__ubereats">
+                <span class="socials-links__ubereats-hash">#</span>
+                UberEats
+              </p>
+              <a href="#">
+                <img src="images/facebook.svg" alt="facebook icon">
+              </a>
+              <a href="#">
+                <img src="images/twitter.svg" alt="twitter icon">
+              </a>
+              <a href="#">
+                <img src="images/instagram.svg" alt="instagram icon">
+              </a>
+            </div>
+          </div>
+          <ul class="top-row__aside">
+            <li class="top-row__aside-li">About UberEats</li>
+            <li class="top-row__aside-li">Become a Delivery Partner</li>
+            <li class="top-row__aside-li">Become a Restaurant Partner</li>
+          </ul>
+          <ul class="top-row__aside">
+            <li class="top-row__aside-li">See all cities</li>
+            <li class="top-row__aside-li">Pricing</li>
+            <li class="top-row__aside-li">Help</li>
+            <li class="top-row__aside-li">FAQs</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="middle-row">
+          <a href="#">
+            <img src="images/google.png" alt="google">
+          </a>
+          <a href="#">
+            <img src="images/apple.jpg" alt="appstore">
+          </a>
+        </div>
+        <hr>
+        <div class="bottom-row">
+          <p class="bottom-row__link">© 2019 Uber Technologies Inc.</p>
+          <a href="#" class="bottom-row__link">Privacy</a>
+          <a href="#" class="bottom-row__link">Terms</a>
+          <a href="#">
+            <img src="images/up.png" class="bottom-row__footer-up" alt="up button">
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
 </html>
